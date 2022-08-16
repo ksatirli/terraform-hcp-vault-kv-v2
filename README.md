@@ -1,6 +1,6 @@
 # HCP Vault: KV v2 Secrets Backend
 
-This Terraform Module provisions a Key-Value (v2) Secrets Backend for HashiCorp Cloud Platform (HCP) Vault.
+This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://www.vaultproject.io/docs/secrets/kv/kv-v2) for HashiCorp Cloud Platform (HCP) Vault.
 
 ## Table of Contents
 
@@ -16,6 +16,8 @@ This Terraform Module provisions a Key-Value (v2) Secrets Backend for HashiCorp 
 * HashiCorp Cloud Platform (HCP) [Account](https://portal.cloud.hashicorp.com/sign-in)
 * HashiCorp Cloud Platform [Vault](https://cloud.hashicorp.com/products/vault)
 * Terraform `1.2.x` or newer.
+
+This module requires an actively provisioned [HCP Vault](https://cloud.hashicorp.com/products/vault). For recommendations on how to deploy this cluster and the associated HashiCorp Virtual Network (HVN), see [this module](https://registry.terraform.io/modules/ksatirli/hvn-aws/hcp/latest).
 
 ## Usage
 
