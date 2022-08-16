@@ -28,7 +28,28 @@ This module requires an actively provisioned [HCP Vault](https://cloud.hashicorp
 For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vault-kv-v2/tree/main/examples/) directory.
 
 <!-- BEGIN_TF_DOCS -->
+### Inputs
 
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| cluster_id | The ID of the HCP Vault cluster. | `string` | n/a | yes |
+| cas_required | Toggle to require the _check-and-set_ (CAS) parameter to be set on all write requests. | `bool` | `true` | no |
+| delete_version_after | If set, specifies the length of time before a version is deleted. | `string` | `null` | no |
+| max_versions | The number of versions to keep per key. | `number` | `5` | no |
+| mount_description | Human-friendly description of the mount. | `string` | `"Terraform-managed KV (v2) Secret Backend."` | no |
+| mount_namespace | The namespace to provision the Secret Backend in. This is always relative to the provider's configured namespace (`admin`). | `string` | `null` | no |
+| mount_path | Where the secret backend will be mounted. | `string` | `"kv"` | no |
+
+### Outputs
+
+| Name | Description |
+|------|-------------|
+| hcp_vault_cluster | Exported Attributes for `hcp_vault_cluster`. |
+| secrets_engine_configuration_url | Secrets Engine configuration view URL. |
+| secrets_engine_view_url | Secrets Engine main view URL. |
+| vault_kv_secret_backend_v2 | Exported Attributes for `vault_kv_secret_backend_v2`. |
+| vault_mount | Exported Attributes for `vault_mount`. |
+| vault_ui_main_url | Vault Secrets Engines URL. |
 <!-- END_TF_DOCS -->
 
 ## Author Information
