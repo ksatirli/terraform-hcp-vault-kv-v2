@@ -4,12 +4,16 @@ This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://www.
 
 ## Table of Contents
 
-- [HCP Vault: KV v2 Secrets Backend](#hcp-vault-kv-v2-secrets-backend)
-  - [Table of Contents](#table-of-contents)
-  - [Requirements](#requirements)
-  - [Usage](#usage)
-  - [Author Information](#author-information)
-  - [License](#license)
+<!-- TOC -->
+* [HCP Vault: KV v2 Secrets Backend](#hcp-vault--kv-v2-secrets-backend)
+  * [Table of Contents](#table-of-contents)
+  * [Requirements](#requirements)
+  * [Usage](#usage)
+    * [Inputs](#inputs)
+    * [Outputs](#outputs)
+  * [Author Information](#author-information)
+  * [License](#license)
+<!-- TOC -->
 
 ## Requirements
 
