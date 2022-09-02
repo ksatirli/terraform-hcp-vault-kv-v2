@@ -1,10 +1,10 @@
 terraform {
   # see https://www.terraform.io/docs/language/settings/index.html#specifying-provider-requirements
   required_providers {
-    # see https://registry.terraform.io/providers/hashicorp/hcp/0.39.0/
+    # see https://registry.terraform.io/providers/hashicorp/hcp/0.42.0
     hcp = {
       source  = "hashicorp/hcp"
-      version = "0.40.0, < 1.0.0"
+      version = ">= 0.42.0, < 1.0.0"
     }
 
     # see https://registry.terraform.io/providers/hashicorp/vault/3.8.2/

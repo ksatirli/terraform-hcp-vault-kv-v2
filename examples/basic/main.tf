@@ -2,5 +2,5 @@
 module "hcp_vault_kvv2" {
   source = "../.."
 
-  cluster_id = "workloads-aws"
+  cluster_id = "sample-cluster"
 }
