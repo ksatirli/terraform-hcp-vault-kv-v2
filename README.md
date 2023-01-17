@@ -27,6 +27,7 @@ This module requires an actively provisioned [HCP Vault](https://cloud.hashicorp
 
 > **Warning**
 > Interacting with Vault from Terraform causes any secrets that you read and write to be persisted in both Terraform's state file and in any generated plan files.
+>
 > For any Terraform module that reads or writes Vault secrets, these files should be treated as sensitive and protected accordingly.
 
 For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vault-kv-v2/tree/main/examples/) directory.
