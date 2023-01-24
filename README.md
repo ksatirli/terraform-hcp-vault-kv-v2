@@ -1,11 +1,11 @@
-# HCP Vault: KV v2 Secrets Backend
+# Vault: KV v2 Secrets Backend
 
-This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://www.vaultproject.io/docs/secrets/kv/kv-v2) for HashiCorp Cloud Platform (HCP) Vault.
+This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://developer.hashicorp.com/vault/docs/secrets/kv/kv-v2) for HashiCorp Vault.
 
 ## Table of Contents
 
 <!-- TOC -->
-* [HCP Vault: KV v2 Secrets Backend](#hcp-vault--kv-v2-secrets-backend)
+* [Vault: KV v2 Secrets Backend](#vault--kv-v2-secrets-backend)
   * [Table of Contents](#table-of-contents)
   * [Requirements](#requirements)
   * [Usage](#usage)
@@ -17,11 +17,8 @@ This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://www.
 
 ## Requirements
 
-* HashiCorp Cloud Platform (HCP) [Account](https://portal.cloud.hashicorp.com/sign-in)
-* HashiCorp Cloud Platform [Vault](https://cloud.hashicorp.com/products/vault)
+* HashiCorp Vault
 * Terraform `1.2.x` or newer.
-
-This module requires an actively provisioned [HCP Vault](https://cloud.hashicorp.com/products/vault). For recommendations on how to deploy this cluster and the associated HashiCorp Virtual Network (HVN), see [this module](https://registry.terraform.io/modules/ksatirli/hvn-aws/hcp/latest).
 
 ## Usage
 
@@ -30,7 +27,7 @@ This module requires an actively provisioned [HCP Vault](https://cloud.hashicorp
 >
 > For any Terraform module that reads or writes Vault secrets, these files should be treated as sensitive and protected accordingly.
 
-For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vault-kv-v2/tree/main/examples/) directory.
+For examples, see the [./examples](https://github.com/ksatirli/terraform-vault-kv-v2/tree/main/examples/) directory.
 
 <!-- BEGIN_TF_DOCS -->
 ### Inputs
@@ -53,7 +50,7 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vau
 
 ## Author Information
 
-This module is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/terraform-hcp-vault-kv-v2/graphs/contributors).
+This module is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/terraform-vault-kv-v2/graphs/contributors).
 
 ## License
 

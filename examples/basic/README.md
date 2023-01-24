@@ -1,6 +1,6 @@
 # Example: `basic`
 
-This is a _basic_ example of the `terraform-hcp-vault-kv-v2` module.
+This is a _basic_ example of the `terraform-vault-kv-v2` module.
 
 <!-- BEGIN_TF_DOCS -->
 ### Inputs
