@@ -37,7 +37,7 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vau
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| cluster_id | The ID of the HCP Vault cluster. | `string` | n/a | yes |
+| vault_addr | The Address of the (HCP) Vault cluster. | `string` | n/a | yes |
 | cas_required | Toggle to require the _check-and-set_ (CAS) parameter to be set on all write requests. | `bool` | `true` | no |
 | delete_version_after | If set, specifies the length of time before a version is deleted. | `string` | `null` | no |
 | max_versions | The number of versions to keep per key. | `number` | `5` | no |
@@ -49,7 +49,6 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vau
 
 | Name | Description |
 |------|-------------|
-| hcp_vault_cluster | Exported Attributes for `hcp_vault_cluster`. |
 | secrets_engine_configuration_url | Secrets Engine configuration view URL. |
 | secrets_engine_view_url | Secrets Engine main view URL. |
 | vault_kv_secret_backend_v2 | Exported Attributes for `vault_kv_secret_backend_v2`. |

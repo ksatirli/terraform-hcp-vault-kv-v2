@@ -1,8 +1,3 @@
-output "hcp_vault_cluster" {
-  description = "Exported Attributes for `hcp_vault_cluster`."
-  value       = data.hcp_vault_cluster.main
-}
-
 output "vault_mount" {
   description = "Exported Attributes for `vault_mount`."
   value       = vault_mount.main
@@ -15,9 +10,8 @@ output "vault_kv_secret_backend_v2" {
 
 locals {
   mount           = vault_kv_secret_backend_v2.main.mount
-  namespace       = var.mount_namespace != null ? var.mount_namespace : data.hcp_vault_cluster.main.namespace
-  base_url_suffix = "namespace=${local.namespace}"
-  base_url        = "${local.vault_address}/ui/vault/secrets"
+  base_url_suffix = "namespace=${var.mount_namespace}"
+  base_url        = "${var.vault_addr}/ui/vault/secrets"
 }
 
 output "vault_ui_main_url" {
