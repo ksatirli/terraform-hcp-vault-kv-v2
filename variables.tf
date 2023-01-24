@@ -1,6 +1,6 @@
-variable "cluster_id" {
+variable "vault_addr" {
   type        = string
-  description = "The ID of the HCP Vault cluster."
+  description = "The Address of the (HCP) Vault cluster."
 }
 
 variable "mount_description" {
@@ -38,4 +38,3 @@ variable "delete_version_after" {
   description = "If set, specifies the length of time before a version is deleted."
   default     = null
 }
-
