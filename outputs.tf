@@ -9,22 +9,5 @@ output "vault_kv_secret_backend_v2" {
 }
 
 locals {
-  mount           = vault_kv_secret_backend_v2.main.mount
-  base_url_suffix = "namespace=${var.mount_namespace}"
-  base_url        = "${var.vault_addr}/ui/vault/secrets"
-}
-
-output "vault_ui_main_url" {
-  description = "Vault Secrets Engines URL."
-  value       = "${local.base_url}/?${local.base_url_suffix}"
-}
-
-output "secrets_engine_view_url" {
-  description = "Secrets Engine main view URL."
-  value       = "${local.base_url}/${local.mount}/list?${local.base_url_suffix}"
-}
-
-output "secrets_engine_configuration_url" {
-  description = "Secrets Engine configuration view URL."
-  value       = "${local.base_url}/${local.mount}/configuration?${local.base_url_suffix}"
+  mount = vault_kv_secret_backend_v2.main.mount
 }

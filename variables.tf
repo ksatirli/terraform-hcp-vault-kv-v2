@@ -9,12 +9,6 @@ variable "mount_description" {
   default     = "Terraform-managed KV (v2) Secret Backend."
 }
 
-variable "mount_namespace" {
-  type        = string
-  description = "The namespace to provision the Secret Backend in. This is always relative to the provider's configured namespace (`admin`)."
-  default     = null
-}
-
 variable "mount_path" {
   type        = string
   description = "Where the secret backend will be mounted."
