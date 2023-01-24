@@ -1,8 +1,3 @@
-variable "vault_addr" {
-  type        = string
-  description = "The Address of the (HCP) Vault cluster."
-}
-
 variable "mount_description" {
   type        = string
   description = "Human-friendly description of the mount."

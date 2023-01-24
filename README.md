@@ -37,7 +37,6 @@ For examples, see the [./examples](https://github.com/ksatirli/terraform-hcp-vau
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| vault_addr | The Address of the (HCP) Vault cluster. | `string` | n/a | yes |
 | cas_required | Toggle to require the _check-and-set_ (CAS) parameter to be set on all write requests. | `bool` | `true` | no |
 | delete_version_after | If set, specifies the length of time before a version is deleted. | `string` | `null` | no |
 | max_versions | The number of versions to keep per key. | `number` | `5` | no |
