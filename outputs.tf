@@ -7,7 +7,3 @@ output "vault_kv_secret_backend_v2" {
   description = "Exported Attributes for `vault_kv_secret_backend_v2`."
   value       = vault_kv_secret_backend_v2.main
 }
-
-locals {
-  mount = vault_kv_secret_backend_v2.main.mount
-}

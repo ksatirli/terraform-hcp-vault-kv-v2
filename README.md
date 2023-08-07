@@ -18,7 +18,7 @@ This Terraform Module provisions a [Key-Value (v2) Secrets Backend](https://deve
 ## Requirements
 
 * HashiCorp Vault
-* Terraform `1.2.x` or newer.
+* Terraform `1.3.0` or newer.
 
 ## Usage
 
