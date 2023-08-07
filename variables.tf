@@ -1,18 +1,7 @@
-variable "cluster_id" {
-  type        = string
-  description = "The ID of the HCP Vault cluster."
-}
-
 variable "mount_description" {
   type        = string
   description = "Human-friendly description of the mount."
   default     = "Terraform-managed KV (v2) Secret Backend."
-}
-
-variable "mount_namespace" {
-  type        = string
-  description = "The namespace to provision the Secret Backend in. This is always relative to the provider's configured namespace (`admin`)."
-  default     = null
 }
 
 variable "mount_path" {
@@ -38,4 +27,3 @@ variable "delete_version_after" {
   description = "If set, specifies the length of time before a version is deleted."
   default     = null
 }
-
